@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+    <title>ftp_page</title>
+    <!-- [pyScript 사용 관련 CDN 설정 실시] -->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+<body>
+    <center><h1>FTP Server</h1></center>
+    <hr width="100%" color="black"/>    
+  <table id="demo">
+    <ul>
+      {%for i in data %}
+      <li>{{i}}</li>
+      {% endfor %}
+    </ul>
+
+    <center><a href="/">메인으로 돌아가기</a><br><br><br>
+    <a href="/search">검색하러가기</a><center>
+  </table>
+</body>
